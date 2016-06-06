@@ -1,0 +1,16 @@
+.mobile-blocker {
+	position: fixed;
+	z-index: 999;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: black;
+	color:white;
+	display:none;
+	text-align: center;
+	padding-top:20vh;
+	img {
+		width:40vw;
+	}
+}

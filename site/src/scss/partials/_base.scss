@@ -1,0 +1,97 @@
+// Font weights
+$light: 100;
+$regular: 400;
+$bold: 600;
+
+// Base Font
+$base-font-family: sans-serif;
+$base-font-weight: $regular;
+$base-font-size: 13px;
+$base-line-height: 1.4;
+
+// Fixed Font
+$fixed-font-family: monospace;
+$fixed-font-size: 85%;
+$fixed-line-height: $base-line-height;
+
+//Font Sizes
+// $large-body: 2.4em; /*24pts*/
+// $medium-body: 1.4em; /*18pts*/
+// $small-body: 0.35em;
+// $large-title: 4em;
+// $common-title: 3em; /*36 pts*/
+
+$large-body: 2.3vw; /*24pts*/
+$medium-body: 3.2vh; /*18pts*/
+$small-body: 2.6vh;
+$tiny-body: 0.5em;
+$large-title: 4vw;
+$common-title: 3vw; /*36 pts*/
+
+//responsive fonts
+$medium-body-resp: 1em;
+
+// Headings
+$header-font-weight: $bold;
+
+//Colors
+$grey-bg: #4A4A4A;
+$bright-blue: #005AF1;
+$light-blue: #90D0FF;
+
+a {
+	color:inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.scroll-animation {
+	opacity: 0;
+}
+
+.common-title {
+	font-size: $common-title;
+}
+
+.medium-body {
+	font-size:$medium-body;
+	@include breakpoint(medium down) {
+		font-size: $medium-body-resp;
+	}
+}
+
+.small-body {
+	font-size: $small-body;
+	@include breakpoint(medium down) {
+		font-size: $medium-body-resp;
+	}
+}
+
+section {
+	position:relative;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+video.fullscreen {
+	@include breakpoint(medium down) {
+		width:240vw!important;
+	}
+}
+
+.dark-mask {
+	position: absolute;
+	left:0;right:0;top:0;bottom:0;
+	background-color: rgba(0,0,0,0.3);
+	z-index: 1;
+}
+
+.sticky.stuck {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+}

@@ -1,0 +1,34 @@
+
+//import foundation settings
+@import 'vendors/settings';
+//foundation
+@import 'foundation';
+
+//import mixins
+@import 'modules/flexbox';
+
+//import animations
+@import 'modules/animate';
+
+//include foundation mixins
+@include foundation-global-styles;
+@include foundation-grid;
+
+
+
+//project specific partials
+@import "partials/fonts";
+@import "partials/base";
+@import "partials/cover";
+@import "partials/mobile-blocker";
+
+
+
+
+
+
+
+
+
+
+
