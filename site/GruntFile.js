@@ -88,6 +88,7 @@ module.exports = function(grunt){
 					{expand:true, cwd:'src/', src: ['<%= pkg.name %>.min.js'], dest: 'build/'},
 					{expand:true, cwd:'src/', src: ['**/*.svg'], dest: 'build/'},
 					{expand:true, cwd:'src/', src: ['fonts/*'], dest: 'build/'},
+					{expand:true, cwd:'src/', src: ['videos/*'], dest: 'build/'},
 				]
 			},
 		},
